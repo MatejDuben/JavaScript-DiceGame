@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+.main{
+  display: block;
+  background: linear-gradient(rgb(81, 92, 255), rgb(12, 17, 80));
+  height: 100vh;
+  width: 100%;
+}
+.box-wrapper{
+  position: relative;
+  height: 80%;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  background: rgb(196, 221, 245);
+  transform: translate(-50%, -50%);
+}
+
+.totalscore{
+  font-weight: bold;
+  background: #fffdfd;
+  border-radius: 15px;
+  padding: 10px;
+}
+.totalscore p:nth-of-type(2){
+  font-size: 24px;
+  text-align: center;
+}
+.totalscore0{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.totalscore1{
+  position: absolute;
+  top: 15%;
+  left: 70%;
+}
+
+.current-score{
+  
+  padding: 10px;
+  width: auto;
+  height: 100px;
+  
+  text-align: center;
+}
+.current-score p{
+  font-size: 18px;
+}
+.current-score p:nth-child(2){
+  font-size: 34px;
+  padding-top: 20px;
+}
+.current-score0{
+  position: absolute;
+  top: 40%;
+  left: 9%;
+}
+.current-score1{
+  position: absolute;
+  top: 40%;
+  left: 69%;
+}
+.btn-wrap{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn{
+  margin: 5px 0;
+  border: solid 1px rgb(81, 92, 255);
+  background: rgb(81, 92, 255);
+  color: rgb(196, 221, 245);
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dice{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* rules */
+.open-info__wrapper{
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: auto;
+  padding: 2px 8px;
+  cursor: pointer;
+  color: rgb(81, 92, 255);
+}
+
+.lb{
+  display: none;
+  position: absolute;
+  z-index: 8;
+  height: 100vh;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0;
+
+}
+.lb.active{
+  display: block;
+  opacity: .6;
+}
+.rules__wrapper{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  height: 60%;
+  width: 60%;
+  background: #fff;
+  opacity: 0;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  transition: 0.5s;
+}
+.rules__wrapper.active{
+  display: flex;
+}
+.rules__wrapper.visual{
+  opacity: 1;
+}
+.rules__wrapper h1{
+  font-size: 48px;
+  margin: 10px;
+}
+.rules__wrapper ul{
+  margin-top: 30px;
+  font-family: sans-serif;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+.rules__wrapper ul li{
+  font-size: 32px;
+}

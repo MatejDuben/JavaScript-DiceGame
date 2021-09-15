@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Dice Game</title>
+  <!--CSS links-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="lb ">  
+  </div>
+  <div class="rules__wrapper ">
+    <h1>How to play</h1>
+
+    <ul>
+      <li>The Player is throwing dice and his points are summing.</li>
+      <li>If player throws 1 on the dice, his score will reset and next round goes second player.</li>
+      <li>If player is satisfied with score he raised by throwing, he can push button "take current score" and next round goes second player.</li>
+     
+      
+    </ul>
+    
+    <!-- <p>The Player is throwing dice and his points are summing, If player throws 1 on the dice, his score will reset. </p>
+    <p>If player is satisfied with score he raised by throwing, he can push button "take current score" and next round goes second player.</p> -->
+  </div>
+  
+
+  <section class="main">
+    <div class="box-wrapper">
+      <div class="open-info__wrapper">
+        how to play ?
+      </div>
+
+      <div class="totalscore totalscore0">
+        <p id="player0-name">player 1 score:</p>
+        <p id="player0-score">83</p>
+      </div>
+      <div class="totalscore totalscore1">
+        <p id="player1-name">player 2 score:</p>
+        <p id="player1-score">23</p>
+      </div>
+
+      <div class="current-score current-score0">
+        <p>current Score is</p>
+        <p id="current-score-player0">3</p>
+      </div>
+      <div class="current-score current-score1">
+        <p>current Score is</p>
+        <p id="current-score-player1">5</p>
+      </div>
+
+      <div class="btn-wrap">
+        <button class="btn" id="throw-dice">throw the dice</button> <!--hodit kocku-->
+        <button class="btn" id="let-score">take current score</button> <!--podrzat score-->
+        <button class="btn" id="new-game">New game</button> <!--Nova hra-->
+      </div>
+
+      <div class="dice">
+        <img src="img/1.jpg" alt="" id="dice-img">
+      </div>
+
+
+    </div>
+  </section>
+</body>
+<!--scripts links-->
+<script src="scripts.js"></script>
+<script src="openInfo.js"></script>
+</html>
